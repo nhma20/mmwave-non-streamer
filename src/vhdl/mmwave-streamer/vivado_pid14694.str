@@ -1,0 +1,220 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:47 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 14694
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Mar 28 09:19:17 CEST 2022
+Time zone: 	Central European Standard Time (Europe/Copenhagen)
+
+OS: Ubuntu
+OS Version: 5.13.0-37-generic
+OS Architecture: amd64
+Available processors (cores): 32
+
+Display: 1
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	nm
+User home directory: /home/nm
+User working directory: /home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2020.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: /home/nm/.Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: /home/nm/.Xilinx/Vivado/2020.2/
+Vivado layouts directory: /home/nm/.Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer/vivado.log
+Vivado journal file location: 	/home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-14694-nm
+
+Xilinx Environment Variables
+----------------------------
+FINN_XILINX_PATH: /tools/Xilinx
+FINN_XILINX_VERSION: 2020.2
+VIVADO_PATH: /tools/Xilinx/Vivado/2020.2
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2020.2
+XILINX_SDK: /tools/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,673 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: mmwave-streamer.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 116 MB (+118949kb) [00:00:06]
+// [Engine Memory]: 1,550 MB (+1474017kb) [00:00:06]
+// [Engine Memory]: 1,629 MB (+1520kb) [00:00:06]
+// [GUI Memory]: 122 MB (+662kb) [00:00:06]
+// WARNING: HEventQueue.dispatchEvent() is taking  1503 ms.
+// Tcl Message: open_project mmwave-streamer.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-streamer/src/vhdl/ip'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-streamer/src/hls'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-streamer/src/vhdl/interface_definitions'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'. 
+// Project name: mmwave-streamer; location: /home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer; part: xczu3eg-sbva484-1-i
+dismissDialog("Open Project"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,676 MB. GUI used memory: 67 MB. Current time: 3/28/22, 9:19:17 AM CEST
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 129 MB (+603kb) [00:00:08]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+selectMenuItem((HResource) null, "mmwave_streamer.bd"); // ak
+// [Engine Memory]: 1,850 MB (+146141kb) [00:00:10]
+// bz (cr):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {/home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd} 
+// Tcl Message: Reading block design file </home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding component instance block -- xilinx.com:module_ref:NOT_gate:1.0 - NOT_gate_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 137 MB (+1795kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  1035 ms.
+// Tcl Message: Adding component instance block -- xilinx.com:module_ref:points_RAM:1.0 - points_RAM_0 Adding component instance block -- xilinx.com:hls:mmWaveStreamer:1.0 - mmWaveStreamer_0 Adding component instance block -- xilinx.com:module_ref:UART_RX:1.0 - UART_RX_0 Adding component instance block -- xilinx.com:module_ref:data_parser:1.0 - data_parser_0 Adding component instance block -- xilinx.com:module_ref:stream_controller:1.0 - stream_controller_0 Successfully read diagram <mmwave_streamer> from block design file </home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd> 
+// TclEventType: DG_GRAPH_STALE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Block Design"); // bz
+// [GUI Memory]: 148 MB (+3933kb) [00:00:14]
+// [Engine Memory]: 2,019 MB (+80581kb) [00:00:17]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 144 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, points_RAM(Behavioral) (points_RAM.vhd)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, points_RAM(Behavioral) (points_RAM.vhd)]", 8, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("points_RAM.vhd", 341, 495); // bP
+// Elapsed time: 43 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "ce"); // l
+// Elapsed time: 175 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN_AS, "Save Block Design As..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN_AS
+// eR (cr): Save Block Design As: addNotify
+setText(PAResourceQtoS.SaveBlockDesignAsDialog_DESIGN_NAME, "design_1"); // aa
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// 'cU' command handler elapsed time: 7 seconds
+dismissDialog("Save Block Design As"); // eR
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ac
+// Elapsed time: 732 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectCodeEditor("points_RAM.vhd", 351, 135); // bP
+selectCodeEditor("points_RAM.vhd", 351, 135); // bP
+selectCodeEditor("points_RAM.vhd", 351, 135); // bP

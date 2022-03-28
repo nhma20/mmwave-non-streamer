@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"mmwave_streamer": {
+			"proto_instances": {
+			}
+		}
+	}
+}

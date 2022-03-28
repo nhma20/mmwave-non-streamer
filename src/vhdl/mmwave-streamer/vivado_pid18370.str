@@ -1,0 +1,527 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:47 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 18370
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Mar 28 09:40:00 CEST 2022
+Time zone: 	Central European Standard Time (Europe/Copenhagen)
+
+OS: Ubuntu
+OS Version: 5.13.0-37-generic
+OS Architecture: amd64
+Available processors (cores): 32
+
+Display: 1
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	nm
+User home directory: /home/nm
+User working directory: /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2020.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: /home/nm/.Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: /home/nm/.Xilinx/Vivado/2020.2/
+Vivado layouts directory: /home/nm/.Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/vivado.log
+Vivado journal file location: 	/home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-18370-nm
+
+Xilinx Environment Variables
+----------------------------
+FINN_XILINX_PATH: /tools/Xilinx
+FINN_XILINX_VERSION: 2020.2
+VIVADO_PATH: /tools/Xilinx/Vivado/2020.2
+XILINX_DSP: 
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2020.2
+XILINX_SDK: /tools/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,677 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: mmwave-streamer.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 117 MB (+120651kb) [00:00:06]
+// [Engine Memory]: 1,556 MB (+1480133kb) [00:00:06]
+// [Engine Memory]: 1,669 MB (+36722kb) [00:00:06]
+// [GUI Memory]: 124 MB (+374kb) [00:00:07]
+// WARNING: HEventQueue.dispatchEvent() is taking  1606 ms.
+// Tcl Message: open_project mmwave-streamer.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/vhdl/ip'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/hls'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/vhdl/interface_definitions'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,681 MB. GUI used memory: 68 MB. Current time: 3/28/22, 9:40:01 AM CEST
+// Project name: mmwave-streamer; location: /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer; part: xczu3eg-sbva484-1-i
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [Engine Memory]: 1,910 MB (+165073kb) [00:00:10]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// [Engine Memory]: 2,016 MB (+10824kb) [00:00:13]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectMenuItem((HResource) null, "mmwave_streamer.bd"); // ak
+// bz (cr):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {/home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd} 
+// Tcl Message: Reading block design file </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 140 MB (+10884kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  1011 ms.
+// Tcl Message: Adding component instance block -- xilinx.com:module_ref:NOT_gate:1.0 - NOT_gate_0 Adding component instance block -- xilinx.com:module_ref:points_RAM:1.0 - points_RAM_0 Adding component instance block -- xilinx.com:hls:mmWaveStreamer:1.0 - mmWaveStreamer_0 Adding component instance block -- xilinx.com:module_ref:UART_RX:1.0 - UART_RX_0 Adding component instance block -- xilinx.com:module_ref:data_parser:1.0 - data_parser_0 Adding component instance block -- xilinx.com:module_ref:stream_controller:1.0 - stream_controller_0 Successfully read diagram <mmwave_streamer> from block design file </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd> 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Block Design"); // bz
+// Tcl Message: update_compile_order -fileset sources_1 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets hier_0/Conn1] [get_bd_nets hier_0/mmWaveStreamer_0_points_in_ce0] [get_bd_nets hier_0/stream_controller_0_start] [get_bd_nets hier_0/mmWaveStreamer_0_ap_idle] [get_bd_nets hier_0/mmWaveStreamer_0_points_in_address0] [get_bd_nets hier_0/points_RAM_0_o_data_out] [get_bd_cells hier_0/mmWaveStreamer_0] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// f (cr): Confirm Delete: addNotify
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'c' command handler elapsed time: 3 seconds
+// Tcl Message: startgroup 
+// TclEventType: RSB_REMOVE_OBJECT
+dismissDialog("Confirm Delete"); // f
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_nets hier_0_stream_out_1] 
+// Tcl Message: delete_bd_objs [get_bd_intf_ports stream_out] 
+// Tcl Message: endgroup 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// [GUI Memory]: 150 MB (+3321kb) [00:00:40]
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_intf_pins hier_0/stream_out_1] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets hier_0/stream_out_TREADY_0_1] [get_bd_cells hier_0/stream_controller_0] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets stream_out_TREADY_0_1] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_pins hier_0/stream_out_TREADY_0] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_ports stream_out_TREADY_0] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins hier_0/points_RAM_0/i_ce] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins hier_0/points_RAM_0/o_data_out] 
+// Tcl Message: endgroup 
+// Elapsed time: 60 seconds
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "o_data_out", true); // aa
+// Tcl Command: 'set_property name o_data_out [get_bd_ports o_data_out_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name o_data_out [get_bd_ports o_data_out_0] 
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "i_ce", true); // aa
+// Tcl Command: 'set_property name i_ce [get_bd_ports i_ce_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name i_ce [get_bd_ports i_ce_0] 
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "ce", true); // aa
+// Tcl Command: 'set_property name ce [get_bd_ports i_ce]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name ce [get_bd_ports i_ce] 
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "data_out", true); // aa
+// Tcl Command: 'set_property name data_out [get_bd_ports o_data_out]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name data_out [get_bd_ports o_data_out] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd>  Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/ui/bd_d2c25bd3.ui>  
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: launch_runs synth_1 -jobs 16 
+// Tcl Message: Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd>  Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/ui/bd_d2c25bd3.ui>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: VHDL Output written to : /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/synth/mmwave_streamer.vhd VHDL Output written to : /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/sim/mmwave_streamer.vhd VHDL Output written to : /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/hdl/mmwave_streamer_wrapper.vhd 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/vhdl/ip'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/hls'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/vhdl/interface_definitions'. 
+// Tcl Message: Exporting to file /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/hw_handoff/mmwave_streamer.hwh Generated Block Design Tcl file /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/hw_handoff/mmwave_streamer_bd.tcl Generated Hardware Definition File /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/synth/mmwave_streamer.hwdef 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Mon Mar 28 09:42:13 2022] Launched synth_1... Run output will be captured here: /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.runs/synth_1/runme.log 
+// bq (cr): Launch Run Critical Messages: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 17 seconds
+selectButton(PAResourceItoN.LaunchRunMsgDialog_CANCEL_RUN, "Cancel Run"); // a
+// 'k' command handler elapsed time: 19 seconds
+dismissDialog("Launch Run Critical Messages"); // bq
+// bz (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bz
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins hier_0/points_RAM_0/i_point_addr] 
+// Tcl Message: endgroup 
+// Elapsed time: 11 seconds
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "point_addr", true); // aa
+// Tcl Command: 'set_property name point_addr [get_bd_ports i_point_addr_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name point_addr [get_bd_ports i_point_addr_0] 
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd>  Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/ui/bd_d2c25bd3.ui>  
+// bz (cr):  Resetting Runs : addNotify
+// f (cr): Launch Runs: addNotify
+dismissDialog("Save Constraints"); // bz
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs synth_1 -jobs 16 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Mon Mar 28 09:43:09 2022] Launched synth_1... Run output will be captured here: /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 120 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// O (cr): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_BLOCK_DESIGN_FROM_CURRENT, "Package a block design from the current project. Choose a block design as the source for creating a new IP Definition."); // b
+selectButton("CANCEL", "Cancel"); // JButton
+// 'p' command handler elapsed time: 11 seconds
+dismissDialog("Create and Package New IP"); // O
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[mmwave_streamer]", 0, true, false, false, false, true, false); // a - Popup Trigger - Node
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// O (cr): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_BLOCK_DESIGN_FROM_CURRENT, "Package a block design from the current project. Choose a block design as the source for creating a new IP Definition."); // b
+selectButton("NEXT", "Next >"); // JButton
+// Elapsed time: 27 seconds
+selectButton(PAResourceItoN.NewIpWizard_IP_DEFINITION_SOURCE_LOCATION, (String) null); // t
+setFolderChooser("/home/nm/mmwave-fpga-non-streamer/src/vhdl/ip");
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton("FINISH", "Finish"); // JButton
+// 'p' command handler elapsed time: 51 seconds
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+dismissDialog("Create and Package New IP"); // O
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'. 
+// Tcl Message: ipx::package_project -root_dir /home/nm/mmwave-fpga-non-streamer/src/vhdl/ip -vendor user.org -library user -taxonomy /UserIP -module mmwave_streamer -import_files 
+// Tcl Message: INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'mmwave_streamer' - hence not re-generating. INFO: [IP_Flow 19-7067] Note that bus interface 'CLK.CLK' has a fixed FREQ_HZ of '100000000'. This value will be respected whenever this IP is instantiated in IP Integrator. 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  IP Packager : addNotify
+// [GUI Memory]: 161 MB (+3098kb) [00:06:51]
+dismissDialog("IP Packager"); // bz
+setText(PAResourceItoN.IdentificationContentPanel_NAME, "mmwave_non_streamer"); // B
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+setText(PAResourceItoN.IdentificationContentPanel_DISPLAY_NAME, "mmwave_non_streamer_v1_0"); // B
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+setText(PAResourceItoN.IdentificationContentPanel_DESCRIPTION, "mmwave_non_streamer_v1_0"); // B
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [GUI Memory]: 189 MB (+20843kb) [00:07:09]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+setText(PAResourceItoN.IdentificationContentPanel_VENDOR, "DIII"); // B
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+setText(PAResourceItoN.IdentificationContentPanel_LIBRARY, (String) null); // B
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Elapsed time: 11 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceItoN.MessageBanner_SEE_LIST_OF_INFO_MESSAGES, "3 info messages"); // h
+selectButton(PAResourceItoN.MessageBanner_SEE_LIST_OF_WARNING_MESSAGES, "1 warning"); // h
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectButton(PAResourceOtoP.PackagerStepContentPanel_MESSAGES, "1"); // h
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceQtoS.ReviewContentPanel_PACKAGE_IP, "Package IP"); // a
+selectButton(PAResourceQtoS.ReviewContentPanel_EDIT_PACKAGING_SETTINGS, "Edit packaging settings"); // h
+// Run Command: PAResourceCommand.PACommandNames_IP_SETTINGS
+// d (cr): Settings: addNotify
+selectCheckBox(PAResourceQtoS.SettingsProjectIPPackagerPage_CREATE_ARCHIVE_OF_IP, "Create archive of IP", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Settings"); // d
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.ReviewContentPanel_PACKAGE_IP, "Package IP"); // a
+// HOptionPane Error: 'Packaging an IP with invalid VLNV is not allowed. Please resolve below errors before packaging. The IP library name '' is not a valid name. It should not contain any whitespace, special characters or start with a numeric value.  (Error)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ar
+// Elapsed time: 45 seconds
+setText(PAResourceItoN.IdentificationContentPanel_LIBRARY, "pl_search"); // B
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Elapsed time: 30 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceQtoS.ReviewContentPanel_PACKAGE_IP, "Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0] 
+// TclEventType: PACKAGER_OBJECT_DELETE
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: ipx::create_xgui_files [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0] 
+// Tcl Message: ipx::update_checksums [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0] 
+// Tcl Message: INFO: [IP_Flow 19-7067] Note that bus interface 'CLK.CLK' has a fixed FREQ_HZ of '100000000'. This value will be respected whenever this IP is instantiated in IP Integrator. 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path /home/nm/mmwave-fpga-non-streamer/src/vhdl/ip 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/vhdl/ip' INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'. 
+// bz (cr):  Package IP : addNotify
+// Tcl Message: ipx::check_integrity -quiet [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0] 
+// Tcl Message: ipx::archive_core /home/nm/mmwave-fpga-non-streamer/src/vhdl/ip/DIII_pl_search_mmwave_non_streamer_1.0.zip [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0] 
+selectButton("OptionPane.button", "OK"); // JButton

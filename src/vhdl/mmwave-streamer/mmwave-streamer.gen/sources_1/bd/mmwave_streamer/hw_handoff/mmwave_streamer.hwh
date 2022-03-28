@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Mar 28 09:43:07 2022" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="zynquplus" DEVICE="xczu3eg" NAME="mmwave_streamer" PACKAGE="sbva484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="rst_n" SIGIS="undef" SIGNAME="External_Ports_rst_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hier_0_NOT_gate_0" PORT="i_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="i_RX_Serial" SIGIS="undef" SIGNAME="External_Ports_i_RX_Serial">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hier_0_UART_RX_0" PORT="i_RX_Serial"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hier_0_UART_RX_0" PORT="i_Clk"/>
+        <CONNECTION INSTANCE="hier_0_data_parser_0" PORT="i_Clk"/>
+        <CONNECTION INSTANCE="hier_0_points_RAM_0" PORT="i_Clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ce" SIGIS="undef" SIGNAME="External_Ports_ce">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hier_0_points_RAM_0" PORT="i_ce"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="127" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="hier_0_points_RAM_0_o_data_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hier_0_points_RAM_0" PORT="o_data_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="4" NAME="point_addr" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_point_addr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hier_0_points_RAM_0" PORT="i_point_addr"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/hier_0/NOT_gate_0" HWVERSION="1.0" INSTANCE="hier_0_NOT_gate_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="NOT_gate" VLNV="xilinx.com:module_ref:NOT_gate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="mmwave_streamer_NOT_gate_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="i_in" SIGIS="undef" SIGNAME="External_Ports_rst_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_out" SIGIS="undef" SIGNAME="hier_0_NOT_gate_0_o_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_points_RAM_0" PORT="i_Rst"/>
+            <CONNECTION INSTANCE="hier_0_data_parser_0" PORT="i_Rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/hier_0/UART_RX_0" HWVERSION="1.0" INSTANCE="hier_0_UART_RX_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="UART_RX" VLNV="xilinx.com:module_ref:UART_RX:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="g_CLKS_PER_BIT" VALUE="109"/>
+        <PARAMETER NAME="Component_Name" VALUE="mmwave_streamer_UART_RX_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_Clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_RX_Serial" SIGIS="undef" SIGNAME="External_Ports_i_RX_Serial">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="i_RX_Serial"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="o_RX_DV" SIGIS="undef" SIGNAME="hier_0_UART_RX_0_o_RX_DV">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_data_parser_0" PORT="i_Ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="o_RX_Byte" RIGHT="0" SIGIS="undef" SIGNAME="hier_0_UART_RX_0_o_RX_Byte">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_data_parser_0" PORT="i_RX_Byte"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/hier_0/data_parser_0" HWVERSION="1.0" INSTANCE="hier_0_data_parser_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="data_parser" VLNV="xilinx.com:module_ref:data_parser:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="mmwave_streamer_data_parser_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="i_RX_Byte" RIGHT="0" SIGIS="undef" SIGNAME="hier_0_UART_RX_0_o_RX_Byte">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_UART_RX_0" PORT="o_RX_Byte"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_Clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_Ena" SIGIS="undef" SIGNAME="hier_0_UART_RX_0_o_RX_DV">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_UART_RX_0" PORT="o_RX_DV"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_Rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="hier_0_NOT_gate_0_o_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_NOT_gate_0" PORT="o_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="o_data_out" RIGHT="0" SIGIS="undef" SIGNAME="hier_0_data_parser_0_o_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_points_RAM_0" PORT="i_data_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="o_set_and_rdy" RIGHT="0" SIGIS="undef" SIGNAME="hier_0_data_parser_0_o_set_and_rdy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_points_RAM_0" PORT="i_set_and_rdy"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/hier_0/points_RAM_0" HWVERSION="1.0" INSTANCE="hier_0_points_RAM_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="points_RAM" VLNV="xilinx.com:module_ref:points_RAM:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="d_width" VALUE="128"/>
+        <PARAMETER NAME="size" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="mmwave_streamer_points_RAM_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="i_Clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_Rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="hier_0_NOT_gate_0_o_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_NOT_gate_0" PORT="o_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="i_data_in" RIGHT="0" SIGIS="undef" SIGNAME="hier_0_data_parser_0_o_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_data_parser_0" PORT="o_data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="i_point_addr" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_point_addr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="point_addr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="i_set_and_rdy" RIGHT="0" SIGIS="undef" SIGNAME="hier_0_data_parser_0_o_set_and_rdy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hier_0_data_parser_0" PORT="o_set_and_rdy"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="i_ce" SIGIS="undef" SIGNAME="External_Ports_ce">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ce"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="127" NAME="o_data_out" RIGHT="0" SIGIS="undef" SIGNAME="hier_0_points_RAM_0_o_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_out"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

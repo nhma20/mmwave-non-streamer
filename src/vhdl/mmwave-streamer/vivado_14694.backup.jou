@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 28 09:19:05 2022
+# Process ID: 14694
+# Current directory: /home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer
+# Command line: vivado mmwave-streamer.xpr
+# Log file: /home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer/vivado.log
+# Journal file: /home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project mmwave-streamer.xpr
+open_bd_design {/home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd}
+update_compile_order -fileset sources_1

@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 28 09:06:29 2022
+# Process ID: 12310
+# Current directory: /home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer
+# Command line: vivado mmwave-streamer.xpr
+# Log file: /home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer/vivado.log
+# Journal file: /home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project mmwave-streamer.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-streamer/src/vhdl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-streamer/src/hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-streamer/src/vhdl/interface_definitions'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_bd_design {/home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd}
+Reading block design file </home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd>...
+Adding component instance block -- xilinx.com:module_ref:NOT_gate:1.0 - NOT_gate_0
+Adding component instance block -- xilinx.com:module_ref:points_RAM:1.0 - points_RAM_0
+Adding component instance block -- xilinx.com:hls:mmWaveStreamer:1.0 - mmWaveStreamer_0
+Adding component instance block -- xilinx.com:module_ref:UART_RX:1.0 - UART_RX_0
+Adding component instance block -- xilinx.com:module_ref:data_parser:1.0 - data_parser_0
+Adding component instance block -- xilinx.com:module_ref:stream_controller:1.0 - stream_controller_0
+Successfully read diagram <mmwave_streamer> from block design file </home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd>
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 28 09:18:52 2022...

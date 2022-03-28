@@ -1,0 +1,121 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 28 09:39:48 2022
+# Process ID: 18370
+# Current directory: /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer
+# Command line: vivado mmwave-streamer.xpr
+# Log file: /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/vivado.log
+# Journal file: /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project mmwave-streamer.xpr
+INFO: [Project 1-313] Project file moved from '/home/nm/mmwave-fpga-streamer/src/vhdl/mmwave-streamer' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/vhdl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/vhdl/interface_definitions'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+open_bd_design {/home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd}
+Reading block design file </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd>...
+Adding component instance block -- xilinx.com:module_ref:NOT_gate:1.0 - NOT_gate_0
+Adding component instance block -- xilinx.com:module_ref:points_RAM:1.0 - points_RAM_0
+Adding component instance block -- xilinx.com:hls:mmWaveStreamer:1.0 - mmWaveStreamer_0
+Adding component instance block -- xilinx.com:module_ref:UART_RX:1.0 - UART_RX_0
+Adding component instance block -- xilinx.com:module_ref:data_parser:1.0 - data_parser_0
+Adding component instance block -- xilinx.com:module_ref:stream_controller:1.0 - stream_controller_0
+Successfully read diagram <mmwave_streamer> from block design file </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd>
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_intf_nets hier_0/Conn1] [get_bd_nets hier_0/mmWaveStreamer_0_points_in_ce0] [get_bd_nets hier_0/stream_controller_0_start] [get_bd_nets hier_0/mmWaveStreamer_0_ap_idle] [get_bd_nets hier_0/mmWaveStreamer_0_points_in_address0] [get_bd_nets hier_0/points_RAM_0_o_data_out] [get_bd_cells hier_0/mmWaveStreamer_0]
+startgroup
+delete_bd_objs [get_bd_intf_nets hier_0_stream_out_1]
+delete_bd_objs [get_bd_intf_ports stream_out]
+endgroup
+delete_bd_objs [get_bd_intf_pins hier_0/stream_out_1]
+delete_bd_objs [get_bd_nets hier_0/stream_out_TREADY_0_1] [get_bd_cells hier_0/stream_controller_0]
+delete_bd_objs [get_bd_nets stream_out_TREADY_0_1]
+delete_bd_objs [get_bd_pins hier_0/stream_out_TREADY_0]
+delete_bd_objs [get_bd_ports stream_out_TREADY_0]
+update_compile_order -fileset sources_1
+startgroup
+make_bd_pins_external  [get_bd_pins hier_0/points_RAM_0/i_ce]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins hier_0/points_RAM_0/o_data_out]
+endgroup
+set_property name o_data_out [get_bd_ports o_data_out_0]
+set_property name i_ce [get_bd_ports i_ce_0]
+set_property name ce [get_bd_ports i_ce]
+set_property name data_out [get_bd_ports o_data_out]
+save_bd_design
+Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd> 
+Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/ui/bd_d2c25bd3.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/hier_0/points_RAM_0/i_point_addr
+
+Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd> 
+Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/ui/bd_d2c25bd3.ui> 
+VHDL Output written to : /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/synth/mmwave_streamer.vhd
+VHDL Output written to : /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/sim/mmwave_streamer.vhd
+VHDL Output written to : /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/hdl/mmwave_streamer_wrapper.vhd
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/vhdl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/hls'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/vhdl/interface_definitions'.
+Exporting to file /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/hw_handoff/mmwave_streamer.hwh
+Generated Block Design Tcl file /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/hw_handoff/mmwave_streamer_bd.tcl
+Generated Hardware Definition File /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/synth/mmwave_streamer.hwdef
+[Mon Mar 28 09:42:13 2022] Launched synth_1...
+Run output will be captured here: /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.runs/synth_1/runme.log
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mref/stream_controller/component.xml. It will be created.
+reset_run synth_1
+startgroup
+make_bd_pins_external  [get_bd_pins hier_0/points_RAM_0/i_point_addr]
+endgroup
+set_property name point_addr [get_bd_ports i_point_addr_0]
+save_bd_design
+Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd> 
+Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/ui/bd_d2c25bd3.ui> 
+launch_runs synth_1 -jobs 16
+Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/mmwave_streamer.bd> 
+Wrote  : </home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.srcs/sources_1/bd/mmwave_streamer/ui/bd_d2c25bd3.ui> 
+VHDL Output written to : /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/synth/mmwave_streamer.vhd
+VHDL Output written to : /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/sim/mmwave_streamer.vhd
+VHDL Output written to : /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/hdl/mmwave_streamer_wrapper.vhd
+Exporting to file /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/hw_handoff/mmwave_streamer.hwh
+Generated Block Design Tcl file /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/hw_handoff/mmwave_streamer_bd.tcl
+Generated Hardware Definition File /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.gen/sources_1/bd/mmwave_streamer/synth/mmwave_streamer.hwdef
+[Mon Mar 28 09:43:09 2022] Launched synth_1...
+Run output will be captured here: /home/nm/mmwave-fpga-non-streamer/src/vhdl/mmwave-streamer/mmwave-streamer.runs/synth_1/runme.log
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::package_project -root_dir /home/nm/mmwave-fpga-non-streamer/src/vhdl/ip -vendor user.org -library user -taxonomy /UserIP -module mmwave_streamer -import_files
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'mmwave_streamer' - hence not re-generating.
+INFO: [IP_Flow 19-7067] Note that bus interface 'CLK.CLK' has a fixed FREQ_HZ of '100000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK.CLK' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property core_revision 2 [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0]
+ipx::create_xgui_files [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0]
+ipx::update_checksums [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0]
+ipx::check_integrity [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0]
+INFO: [IP_Flow 19-7067] Note that bus interface 'CLK.CLK' has a fixed FREQ_HZ of '100000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'CLK.CLK' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0]
+update_ip_catalog -rebuild -repo_path /home/nm/mmwave-fpga-non-streamer/src/vhdl/ip
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/nm/mmwave-fpga-non-streamer/src/vhdl/ip'
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::check_integrity -quiet [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0]
+ipx::archive_core /home/nm/mmwave-fpga-non-streamer/src/vhdl/ip/DIII_pl_search_mmwave_non_streamer_1.0.zip [ipx::find_open_core DIII:pl_search:mmwave_non_streamer:1.0]
