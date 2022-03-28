@@ -1,4 +1,4 @@
-mmWave FPGA Streamer
+mmWave FPGA parser
 ============================================================================
 
 Reads and parses data from IWR6843AOP and exposes as concurrent RAM
