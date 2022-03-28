@@ -1,7 +1,7 @@
 mmWave FPGA Streamer
 ============================================================================
 
-Reads and parses data from IWR6843AOP and streams it 
+Reads and parses data from IWR6843AOP and exposes as concurrent RAM
 ----------------------------------------------------------------------------
 
 Partially derived from: https://github.com/nhma20/ultra96_mmwave_interface
@@ -19,7 +19,4 @@ Tested with:
 - `Ubuntu 20.04.3 LTS (host PC - R3950X+32GB+RTX2070Super)`
 - `Vivado / Vitis / Vitis HLS 2020.2` (with Y2K22 bug patch)
 
-
-
-## Flow
-0. Temp
+![non_streamer](https://user-images.githubusercontent.com/76950970/160352027-58168aef-a056-4414-9218-6bcbf3366ebc.png)
